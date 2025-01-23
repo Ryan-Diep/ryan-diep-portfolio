@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/ryan-diep-portfolio/'
+  base: process.env.GITHUB_PAGES ? '/ryan-diep-portfolio/' : '/',
 })
