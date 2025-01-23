@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(100px) translateY(100vh);
+  }
+}
