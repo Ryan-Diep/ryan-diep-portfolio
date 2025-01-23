@@ -182,8 +182,11 @@ const SkillsSection = () => {
   return (
     <section 
       id="skills" 
-      className="container mx-auto px-4 py-16"
-      style={{ backgroundColor: COLORS.background }}
+      className="w-full px-4 py-16"
+      style={{ 
+        backgroundColor: COLORS.background,
+        color: COLORS.text  // Add text color to contrast with background
+      }}
     >
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
@@ -193,7 +196,7 @@ const SkillsSection = () => {
       >
         Technical Skills
       </motion.h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="container mx-auto grid md:grid-cols-3 gap-8">
         {skillCategories.map(({ title, skills }) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -218,49 +221,9 @@ const SkillsSection = () => {
   );
 };
 
-const ContactSection = () => {
-  return (
-    <section 
-      id="contact" 
-      className="container mx-auto px-4 py-16 bg-primary text-white"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-xl mx-auto text-center"
-      >
-        <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-        <div className="space-y-4">
-          <p>Email: ryandiep5@gmail.com</p>
-          <p>Phone: (613) 808-1681</p>
-          <div className="flex justify-center space-x-6 pt-6">
-            {[
-              { icon: Github, link: 'https://github.com/Ryan-Diep' },
-              { icon: Linkedin, link: 'https://linkedin.com/in/ryan-diep' },
-              { icon: Download, link: '/Ryan_Diep_Resume.pdf' }
-            ].map(({ icon: Icon, link }) => (
-              <motion.a
-                key={link}
-                href={link}
-                target="_blank"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                className="text-white hover:text-accent"
-              >
-                <Icon size={36} />
-              </motion.a>
-            ))}
-          </div>
-        </div>
-      </motion.div>
-    </section>
-  );
-};
-
 const App = () => {
   return (
-    <div className="min-h-screen bg-background text-text">
+    <div className="min-h-screen w-full bg-background text-text">
       <NavigationBar />
       <HeroSection />
       <ProjectsSection />
