@@ -72,13 +72,13 @@ const HeroSection = () => {
       >
       {/* Snowflakes */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        {[...Array(100)].map((_, index) => (
+        {[...Array(750)].map((_, index) => (
           <div
             key={index}
             className="snowflake"
             style={{
               animationDuration: `${Math.random() * 30 + 20}s`, // Random duration
-              animationDelay: `${Math.random() * 5}s`, // Random delay
+              animationDelay: `${Math.random() * 20}s`, // Random delay
               left: `${Math.random() * 100}vw`, // Random position
             }}
           />
