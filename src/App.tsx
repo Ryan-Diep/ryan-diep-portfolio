@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
 import {
   motion
 } from "framer-motion";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
-  IconMail,
   IconHome,
   IconBriefcase,
   IconCode,
@@ -76,9 +74,10 @@ export default function Portfolio() {
   const skills = {
     languages: [
       { name: "Python", slug: "python", color: "3776AB" },
-      { name: "Java", slug: "openjdk", color: "FFFFFF" },
+      { name: "Java", slug: "openjdk", color: "d92b34" },
+      { name: "C", slug: "c", color: "00599C" },
       { name: "C++", slug: "cplusplus", color: "00599C" },
-      { name: "C#", slug: "csharp", color: "239120" },
+      { name: "csharp", slug: "csharp", color: "7f3281" },
       { name: "SQL", slug: "postgresql", color: "4169E1" },
       { name: "JavaScript", slug: "javascript", color: "F7DF1E" },
       { name: "HTML5", slug: "html5", color: "E34F26" },
