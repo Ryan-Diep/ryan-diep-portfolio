@@ -383,7 +383,7 @@ export default function Portfolio() {
               <h2 className="text-3xl font-bold text-black dark:text-white mb-8">Get In Touch</h2>
               <div className="p-8 bg-neutral-50 dark:bg-zinc-800/50 border border-neutral-200 dark:border-zinc-700 rounded-3xl">
                  <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 text-center">
-                   I am currently seeking <b>New Grad (2026)</b> and <b>Fall 2025</b> opportunities.
+                   I am currently seeking <b>Summer & Fall 2026 Internships</b> and <b>Winter 2027 New Grad</b> opportunities.
                    <br/>Feel free to reach out via any of the platforms below!
                  </p>
                  
