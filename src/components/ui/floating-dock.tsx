@@ -75,7 +75,6 @@ const FloatingDockMobile = ({
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
                 onClick={() => setOpen(false)}
               >
-                {/* FIX: Pass the top-level mouseX here */}
                 <IconContainer mouseX={mouseX} {...item} />
               </motion.div>
             ))}
