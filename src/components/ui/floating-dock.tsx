@@ -45,13 +45,17 @@ const FloatingDockMobile = ({
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
+  
+  // FIX: Define the hook at the top level, not inside the map loop
+  const mouseX = useMotionValue(Infinity);
+
   return (
     <div className={cn("relative block md:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2"
+            className="absolute inset-x-0 bottom-full mb-2 flex flex-col gap-2 z-50"
           >
             {items.map((item, idx) => (
               <motion.div
@@ -69,8 +73,10 @@ const FloatingDockMobile = ({
                   },
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
+                onClick={() => setOpen(false)}
               >
-                <IconContainer mouseX={useMotionValue(Infinity)} {...item} />
+                {/* FIX: Pass the top-level mouseX here */}
+                <IconContainer mouseX={mouseX} {...item} />
               </motion.div>
             ))}
           </motion.div>
