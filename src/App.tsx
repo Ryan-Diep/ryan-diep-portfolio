@@ -45,7 +45,7 @@ export default function Portfolio() {
       company: "Crypto4A", 
       position: "Software Engineer Intern", 
       period: "Sept 2025 - Present", 
-      description: "Platform Team (Backend) 🔐",
+      description: "Platform Team (Backend Platform) 🔐",
       logoUrl: "https://media.glassdoor.com/sqll/1818903/crypto4a-squarelogo-1631612292419.png",
       websiteUrl: "https://www.crypto4a.com/"
     },
@@ -383,12 +383,11 @@ export default function Portfolio() {
               <h2 className="text-3xl font-bold text-black dark:text-white mb-8">Get In Touch</h2>
               <div className="p-8 bg-neutral-50 dark:bg-zinc-800/50 border border-neutral-200 dark:border-zinc-700 rounded-3xl">
                  <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 text-center">
-                   [cite_start]I am currently seeking <b>New Grad (2026)</b> and <b>Fall 2025</b> opportunities[cite: 9, 10].
+                   I am currently seeking <b>New Grad (2026)</b> and <b>Fall 2025</b> opportunities.
                    <br/>Feel free to reach out via any of the platforms below!
                  </p>
                  
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                    {/* Email Card */}
                     <a href="mailto:ryandiep5@gmail.com" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
                       <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full text-blue-600 dark:text-blue-400">
                         <IconMail size={24} />
@@ -399,7 +398,6 @@ export default function Portfolio() {
                       </div>
                     </a>
 
-                    {/* Phone Card */}
                     <a href="tel:+16138081681" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
                       <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded-full text-green-600 dark:text-green-400">
                         <IconPhone size={24} />
@@ -410,7 +408,6 @@ export default function Portfolio() {
                       </div>
                     </a>
 
-                    {/* LinkedIn Card */}
                     <a href="https://linkedin.com/in/ryan-diep" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
                       <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full text-blue-700 dark:text-blue-400">
                         <IconBrandLinkedin size={24} />
@@ -421,7 +418,6 @@ export default function Portfolio() {
                       </div>
                     </a>
 
-                    {/* GitHub Card */}
                     <a href="https://github.com/Ryan-Diep" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
                       <div className="bg-purple-100 dark:bg-purple-900/30 p-3 rounded-full text-purple-600 dark:text-purple-400">
                         <IconBrandGithub size={24} />
