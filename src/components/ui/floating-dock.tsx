@@ -5,7 +5,7 @@
  **/
 
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse, IconMoon, IconSun } from "@tabler/icons-react";
+import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -136,14 +136,15 @@ function IconContainer({
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [65, 150, 65]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [65, 150, 65]);
+  let widthTransform = useTransform(distance, [-150, 0, 150], [65, 150, 65], { clamp: true });
+  let heightTransform = useTransform(distance, [-150, 0, 150], [65, 150, 65], { clamp: true });
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [37.5, 75, 37.5]);
+  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [37.5, 75, 37.5], { clamp: true });
   let heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
     [37.5, 75, 37.5],
+    { clamp: true },
   );
 
   let width = useSpring(widthTransform, {

@@ -10,8 +10,7 @@ import {
   IconUser,
   IconTools,
   IconBrandOpenSource,
-  IconMail,
-  IconPhone
+  IconMail
 } from "@tabler/icons-react";
 import { AuroraBackground } from "./components/ui/aurora-background";
 import { FloatingDock } from "./components/ui/floating-dock";
@@ -36,15 +35,15 @@ export default function Portfolio() {
     { 
       company: "Shopify", 
       position: "Software Engineer Intern", 
-      period: "Jan 2026", 
-      description: "Catalogue Team (ML Infra) 🛍️",
+      period: "Jan 2026 - Present", 
+      description: "Catalogue Team (Inference Pipelines) 🛍️",
       logoUrl: "https://www.citypng.com/public/uploads/preview/shopify-bag-icon-symbol-logo-701751695132537nenecmhs0u.png",
       websiteUrl: "https://www.shopify.com/"
     },
     { 
       company: "Crypto4A", 
       position: "Software Engineer Intern", 
-      period: "Sept 2025 - Present", 
+      period: "Sept 2025 - Dec 2025", 
       description: "Platform Team (Backend Platform) 🔐",
       logoUrl: "https://media.glassdoor.com/sqll/1818903/crypto4a-squarelogo-1631612292419.png",
       websiteUrl: "https://www.crypto4a.com/"
@@ -346,7 +345,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Languages</h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.languages.map((skill) => (
-                      <img key={skill.name} src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
+                      <img key={skill.name} src={`https://img.shields.io/badge/${encodeURIComponent(skill.name)}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
                     ))}
                   </div>
                 </div>
@@ -354,7 +353,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.frameworks.map((skill) => (
-                      <img key={skill.name} src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
+                      <img key={skill.name} src={`https://img.shields.io/badge/${encodeURIComponent(skill.name)}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
                     ))}
                   </div>
                 </div>
@@ -362,7 +361,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Developer Tools</h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.devTools.map((skill) => (
-                      <img key={skill.name} src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
+                      <img key={skill.name} src={`https://img.shields.io/badge/${encodeURIComponent(skill.name)}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
                     ))}
                   </div>
                 </div>
@@ -370,7 +369,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">Cloud Services</h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.cloud.map((skill) => (
-                      <img key={skill.name} src={`https://img.shields.io/badge/${skill.name}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
+                      <img key={skill.name} src={`https://img.shields.io/badge/${encodeURIComponent(skill.name)}-${skill.color}?style=for-the-badge&logo=${skill.slug}&logoColor=white`} alt={`${skill.name} badge`} className="hover:scale-110 transition-transform"/>
                     ))}
                   </div>
                 </div>
@@ -398,15 +397,7 @@ export default function Portfolio() {
                       </div>
                     </a>
 
-                    <a href="tel:+16138081681" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
-                      <div className="bg-green-100 dark:bg-green-900/30 p-3 rounded-full text-green-600 dark:text-green-400">
-                        <IconPhone size={24} />
-                      </div>
-                      <div>
-                        <div className="text-sm text-gray-500 dark:text-gray-400">Phone</div>
-                        <div className="font-semibold text-gray-900 dark:text-white">(613) 808-1681</div>
-                      </div>
-                    </a>
+
 
                     <a href="https://linkedin.com/in/ryan-diep" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 rounded-xl hover:shadow-md transition-shadow">
                       <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full text-blue-700 dark:text-blue-400">
